@@ -1,5 +1,5 @@
 # Microsoft Imagine Cup — Banjeer
-This is our repository for our product, Banjeer!
+This is our repository for our product, **Banjeer**!
 
 The flood in Jakarta has been a recurring problem since the 17th century. Furthermore, the flood in Jakarta is still happening annually, and climate change makes the matter even worse every year.
 
@@ -9,7 +9,7 @@ Automating the river condition will help the government reduce the capital, time
 
 We also hope that we can further improve our product so it can help the response to the flood globally, especially in the developing nations. We realize that floods are a major problem globally, especially for developing nations like Indonesia.
 
-Last, Let the River Flow!
+Last, **Let the River Flow!**
 
 ## Important Links 
 - Dataset : [Drive](https://drive.google.com/file/d/1zc9JX2JNZShUhYrE6UOrXJe03waRrqsa/view?usp=sharing)
