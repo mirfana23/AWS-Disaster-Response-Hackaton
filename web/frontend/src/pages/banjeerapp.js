@@ -53,7 +53,8 @@ export default class BanjeerApp extends React.Component{
       file_process: false, 
       img_preview : null,
       img_result  : null, 
-      loading     : false
+      loading     : false,
+      magic_words : 'Doing some magic...'
     }
   }
   componentWillUnmount(){
@@ -77,7 +78,9 @@ export default class BanjeerApp extends React.Component{
         })
         throw new Error("Lol")
       }
-      this.setState({file_process : true, img_result : null, loading : true})
+      this.setState({
+        file_process : true, img_result : null, loading : true, magic_words : 'Doing some magic...'
+      })
       const load  = new FormData()
       load.append('image', this.state.file_form.value, this.state.file_form.value.name)
       let baseUrl   = process.env.REACT_APP_API_ENDPOINT !== undefined ? process.env.REACT_APP_API_ENDPOINT : 'http://localhost:8000/api'
@@ -93,6 +96,12 @@ export default class BanjeerApp extends React.Component{
           img_result : url, loading : false
         })
         res()
+      })
+      .catch((err) => {
+        if(err && err.response && err.response.status){
+          if(err.response.status === 413) this.setState({magic_words : 'Magic failed as file is too large'})
+          if(err.response.status === 500) this.setState({magic_words : 'Magic Failed as the wizard is taking a rest'})
+        }
       })
     })
   }
@@ -156,7 +165,7 @@ export default class BanjeerApp extends React.Component{
           </div>
           {this.state.loading ? 
           <div className = 'banjeer-loading'>
-            <p>Doing some Magic...</p>
+            <p>{this.state.magic_words}</p>
           </div>
           :
           <div key = {this.state.file_process} className = {`banjeer-result-image ${this.state.file_process ? 'show' : 'hide'}`}>
