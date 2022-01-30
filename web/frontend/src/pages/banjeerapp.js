@@ -80,7 +80,7 @@ export default class BanjeerApp extends React.Component{
       this.setState({file_process : true, img_result : null, loading : true})
       const load  = new FormData()
       load.append('image', this.state.file_form.value, this.state.file_form.value.name)
-      let baseUrl   = process.env.REACT_APP_API_ENDPOINT != undefined ? process.env.REACT_APP_API_ENDPOINT : 'http://localhost:8000/api'
+      let baseUrl   = process.env.REACT_APP_API_ENDPOINT !== undefined ? process.env.REACT_APP_API_ENDPOINT : 'http://localhost:8000/api'
       let url       = `${baseUrl}/upload/`
       axios.post(url, load, {responseType : 'blob'})
       .then((resp) => {
@@ -114,6 +114,12 @@ export default class BanjeerApp extends React.Component{
               </div>
             </div>
           </div>
+          <div className = 'help-text'>
+            <p>Upload a river image and the image will be annotated with colors showing the condition of the river. 
+                  Size does not really matter however, the ML model will resize the image to 512 x 512. Hence, 
+                  it is a good idea to crop the image beforehand. 
+            </p>
+          </div>
           <div className = 'banjeer-prev-title'>
             <p>Preview Image</p>
           </div>
@@ -125,13 +131,38 @@ export default class BanjeerApp extends React.Component{
           <div className = 'banjeer-result-title'>
             <p>Annotation Result</p>
           </div>
+          <div className = 'banjeer-help'>
+            <div className = 'banjeer-help-block'>
+              <div className = 'banjeer-color green'>
+              </div>
+              <div className = 'banjeer-color-title'>
+                <p>River is in very good condition</p>
+              </div>
+            </div>
+            <div className = 'banjeer-help-block'>
+              <div className = 'banjeer-color yellow'>
+              </div>
+              <div className = 'banjeer-color-title'>
+                <p>Moderate river quality</p>
+              </div>
+            </div>
+            <div className = 'banjeer-help-block'>
+              <div className = 'banjeer-color red'>
+              </div>
+              <div className = 'banjeer-color-title'>
+                <p>River is in a very bad shape</p>
+              </div>
+            </div>
+          </div>
           {this.state.loading ? 
           <div className = 'banjeer-loading'>
             <p>Doing some Magic...</p>
           </div>
           :
           <div key = {this.state.file_process} className = {`banjeer-result-image ${this.state.file_process ? 'show' : 'hide'}`}>
-            <img src = {this.state.img_result}/>
+            <div className = 'banjeer-img'>
+              <img src = {this.state.img_result}/>
+            </div>
           </div>}
         </div>
       </section>

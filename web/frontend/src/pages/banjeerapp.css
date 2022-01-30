@@ -2,9 +2,11 @@
   display       : flex;
   flex-flow     : row wrap;
   padding       : 2em 5em;
+  justify-content: space-between;
 }
 .banjeer-container>div{
   width         : 48%;
+  min-width     : 512px;
 }
 .banjeer-container .banjeer-upload-form{
   display       : flex;
@@ -23,9 +25,18 @@
   font-weight   : 900;
   margin-bottom : 1em;
 }
+.help-text{
+  width         : 40vw;
+  min-width     : 300px;
+  max-width     : 90vw;
+}
+.help-text p{
+  text-align    : justify;
+}
 .banjeer-prev-img img{
-  max-height    : 50vh;
-  max-width     : 40vw;
+  width         : 40vw;
+  min-width     : 300px;
+  max-width     : 90vw;
 }
 .banjeer-prev-title, .banjeer-result-title{
   font-size     : 2em;
@@ -53,10 +64,9 @@ button:hover{
 }
 
 .banjeer-result-image img{
-  max-height      : 50vh;
-  max-width       : 50vw;
-  min-width       : 40vw;
-  min-height      : 40vw;
+  width         : 40vw;
+  min-width     : 300px;
+  max-width     : 90vw;
 }
 .banjeer-result-image.show{
   display         : block
@@ -72,6 +82,36 @@ button:hover{
   justify-content : center;
   font-weight     : 900;
   height          : 50vh;
-  width           : 50vw;
+  width           : 40vw;
+  min-width       : 300px;
   border          : 2px rgb(50, 116, 131) solid;
+}
+
+.banjeer-help{
+  display         : flex;
+  flex-flow       : column;
+}
+
+.banjeer-help>div{
+  width         : 40vw;
+  min-width     : 300px;
+  max-width     : 90vw;
+}
+.banjeer-help .banjeer-color{
+  width           : 20%;
+  margin-right    : 1em;
+  height          : 1em;
+}
+.banjeer-help-block{
+  display         : flex;
+  flex-flow       : row wrap;
+}
+.banjeer-color.green{
+  background-color: greenyellow;
+}
+.banjeer-color.red{
+  background-color: red;
+}
+.banjeer-color.yellow{
+  background-color: yellow;
 }
