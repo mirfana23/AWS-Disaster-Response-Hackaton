@@ -16,6 +16,7 @@ Last, **Let the River Flow!**
 - ML Model : [./ml/model](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/ml/model)
 - ML Data : [./river_evaluation](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/river_evaluation)
 - Web Folder : [./web](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/web)
+- Banjeer Web: [20.120.98.83](http://20.120.98.83/)
 
 ## Contributors
 - mirfana23 (Muhammad Irfan Akbar)
