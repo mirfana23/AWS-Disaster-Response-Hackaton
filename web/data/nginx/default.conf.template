@@ -1,6 +1,10 @@
+http{
+  client_max_body_size 100M;
+}
 server { # simple reverse-proxy
   listen       ${NGINX_FRONTEND_PORT};
   server_name  ${NGINX_HOST};
+  client_max_body_size 100M;
   #access_log   logs/domain2.access.log  main;
 
   # serve static files
@@ -20,6 +24,7 @@ server { # simple reverse-proxy
 server {
   listen ${NGINX_BACKEND_PORT};
   server_name ${NGINX_HOST};
+  client_max_body_size 100M;
   location / {
     proxy_pass http://backend:8000;
     proxy_set_header HOST $host;
