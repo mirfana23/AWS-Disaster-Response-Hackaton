@@ -102,6 +102,9 @@ export default class BanjeerApp extends React.Component{
           if(err.response.status === 413) this.setState({magic_words : 'Magic failed as file is too large'})
           if(err.response.status === 500) this.setState({magic_words : 'Magic Failed as the wizard is taking a rest'})
         }
+        else{
+          this.setState({magic_words : 'Magic failed as the wizard is resting'})
+        }
       })
     })
   }
