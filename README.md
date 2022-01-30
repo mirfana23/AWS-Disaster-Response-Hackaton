@@ -12,8 +12,8 @@ We also hope that we can further improve our product so it can help the response
 Last, **Let the River Flow!**
 
 ## Important Links 
-- Dataset : [Drive](https://drive.google.com/file/d/1zc9JX2JNZShUhYrE6UOrXJe03waRrqsa/view?usp=sharing)
-- ML Model : [here](https://1drv.ms/u/s!AuZiINxKojsogQZBM5T5dXsjpPJs?e=8yElK3)
+- Dataset : [OneDrive](https://drive.google.com/file/d/1zc9JX2JNZShUhYrE6UOrXJe03waRrqsa/view?usp=sharing)
+- ML Model : [OneDrive](https://1drv.ms/u/s!AuZiINxKojsogQZBM5T5dXsjpPJs?e=8yElK3)
 - ML Data : [./river_evaluation](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/river_evaluation)
 - Web Folder : [./web](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/web)
 - Banjeer Web: [20.120.98.83](http://20.120.98.83/)
