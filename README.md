@@ -1,25 +1,35 @@
-# Microsoft Imagine Cup — Banjeer
-This is our repository for our product, **Banjeer**!
+# Banjeer - Microsoft Imagine Cup
 
-The flood in Jakarta has been a recurring problem since the 17th century. Furthermore, the flood in Jakarta is still happening annually, and climate change makes the matter even worse every year.
+Welcome to the **Banjeer** project repository! We created Banjeer as a response to the recurring floods in Jakarta, which have been an issue since the 17th century.
 
-Banjeer came up as the countermeasure of floods by utilizing Computer Vision to monitor the condition of rivers from satellite images. We aim to help various stakeholders in the mitigation, preparation, and response to Jakarta’s annual flood. 
+## Overview
 
-Automating the river condition detection will help the government reduce the capital, time, and human resources spent on the annual flood countermeasure. The web is also equipped with features to foster Jakarta’s citizen awareness of its environment. In the short term, we seek to aid the flood mitigation, preparation, and response better. In the long term, however, we expect to stop Jakarta’s annual flood entirely.
+Jakarta faces annual floods, exacerbated by climate change. Banjeer utilizes Computer Vision to monitor river conditions using satellite images, aiming to help stakeholders with flood mitigation, preparation, and response.
 
-We also hope that we can further improve our product so it can help the response to the flood globally, especially in the developing nations. We realize that floods are a major problem globally, especially for developing nations like Indonesia.
+Our automated river condition detection system aids the government in reducing capital, time, and human resources spent on flood countermeasures. In addition, our web platform includes features to raise environmental awareness among Jakarta's citizens.
 
-Last, **Let the River Flow!**
+Our short-term goal is to improve flood mitigation, preparation, and response, while our long-term goal is to completely stop Jakarta's annual floods. We hope to eventually expand our product to help respond to floods worldwide, particularly in developing nations.
 
-## Important Links 
-- Dataset : [OneDrive](https://drive.google.com/file/d/1zc9JX2JNZShUhYrE6UOrXJe03waRrqsa/view?usp=sharing)
-- ML Model : [OneDrive](https://1drv.ms/u/s!AuZiINxKojsogQZBM5T5dXsjpPJs?e=8yElK3)
-- ML Data : [./river_evaluation](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/river_evaluation)
-- Web Folder : [./web](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/web)
-- Banjeer Web: [20.120.98.83](http://20.120.98.83/)
+**Let the River Flow!**
+
+## Key Features
+
+- Automating river condition detection
+- Web platform to increase environmental awareness
+- Short-term goal: better flood mitigation, preparation, and response
+- Long-term goal: stopping annual floods in Jakarta
+
+## Resources
+
+- [Dataset (OneDrive)](https://drive.google.com/file/d/1zc9JX2JNZShUhYrE6UOrXJe03waRrqsa/view?usp=sharing)
+- [ML Model (OneDrive)](https://1drv.ms/u/s!AuZiINxKojsogQZBM5T5dXsjpPJs?e=8yElK3)
+- [ML Data (./river_evaluation)](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/river_evaluation)
+- [Web Folder (./web)](https://github.com/mirfana23/AWS-Disaster-Response-Hackaton/tree/main/web)
+- [Banjeer Web (20.120.98.83)](http://20.120.98.83/)
 
 ## Contributors
-- mirfana23 (Muhammad Irfan Akbar)
-- jowillianto (Jonathan Willianto)
-- izaazm (Muhammad Izaaz Inhar)
-- reinattwijaya (Reinatt Hansel Wijaya)
+
+- [mirfana23 (Muhammad Irfan Akbar)](https://github.com/mirfana23)
+- [jowillianto (Jonathan Willianto)](https://github.com/jowillianto)
+- [izaazm (Muhammad Izaaz Inhar)](https://github.com/izaazm)
+- [reinattwijaya (Reinatt Hansel Wijaya)](https://github.com/reinattwijaya)
